@@ -5,6 +5,7 @@
 RELEASE_FLAGS=""
 if [ -e "$TRAVIS_REPO_SLUG" ]; then
     RELEASE_FLAGS ="-r git+https://github.com/${TRAVIS_REPO_SLUG}.git"
+fi 
 
 exec semantic-release $RELEASE_FLAGS
 
