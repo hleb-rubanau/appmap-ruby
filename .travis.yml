@@ -36,6 +36,6 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: rake release
+    script: ./release.sh
     on:
       branch: master

@@ -140,10 +140,3 @@ task test: %i[spec:all minitest]
 
 task default: :test
 
-task :release do
-    if ENV['TRAVIS_REPO_SLUG'] 
-        run_cmd "semantic-release", "-r", "git+https://github.com/#{ENV['TRAVIS_REPO_SLUG']}.git"
-    else
-        run_cmd "semantic-release"
-    end
-end
