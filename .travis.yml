@@ -13,12 +13,14 @@ services:
 # necessary.
 before_script:
   - unset RAILS_ENV
-  
+ 
+# GEM_ALTERNATIVE_NAME only needed for deployment 
 jobs:
   include:
   - stage: test
     script:
     - mkdir tmp
+    - unset GEM_ALTERNATIVE_NAME
     - bundle exec rake test
 
     
