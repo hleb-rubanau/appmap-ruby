@@ -1,7 +1,6 @@
 $: << File.join(__dir__, 'lib')
 require 'appmap/version'
 GEM_VERSION = AppMap::VERSION
-GEM_NAME=ENV['CI_GEM_NAME'] or 'appmap'
 
 require 'rake/testtask'
 require 'rdoc/task'
@@ -39,14 +38,13 @@ end
 def build_base_image(ruby_version)
   run_cmd "docker build" \
          " --build-arg RUBY_VERSION=#{ruby_version}"    \
-         " --build-arg GEM_NAME=#{GEM_NAME}"            \
          " --build-arg GEM_VERSION=#{GEM_VERSION}"      \
          " -t appmap:#{GEM_VERSION} -f Dockerfile.appmap ."
 end
   
 def build_app_image(app, ruby_version)
   Dir.chdir "spec/fixtures/#{app}" do
-    run_cmd( {"RUBY_VERSION" => ruby_version, "GEM_NAME"=> GEM_NAME, "GEM_VERSION" => GEM_VERSION},
+    run_cmd( {"RUBY_VERSION" => ruby_version, "GEM_NAME"=> 'appmap', "GEM_VERSION" => GEM_VERSION},
       " docker-compose build" \
       " --build-arg RUBY_VERSION=#{ruby_version}" \
       " --build-arg GEM_VERSION=#{GEM_VERSION}"   \
