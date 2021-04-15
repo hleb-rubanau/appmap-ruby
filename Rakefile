@@ -145,5 +145,5 @@ task :release do
         run_cmd "semantic-release", "-r", "git+https://github.com/#{ENV['TRAVIS_REPO_SLUG']}.git"
     else
         run_cmd "semantic-release"
-    do
+    end
 end
