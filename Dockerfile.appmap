@@ -1,5 +1,6 @@
 FROM alpine
 ARG GEM_VERSION
+ARG GEM_NAME=appmap
 
 RUN mkdir /pkg
-COPY pkg/appmap-${GEM_VERSION}.gem /pkg/appmap.gem
+COPY pkg/${GEM_NAME}-${GEM_VERSION}.gem /pkg/${GEM_NAME}.gem
