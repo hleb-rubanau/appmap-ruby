@@ -38,7 +38,9 @@ end
   
 def build_base_image(ruby_version)
   run_cmd "docker build" \
-         " --build-arg RUBY_VERSION=#{ruby_version} --build-arg GEM_VERSION=#{GEM_VERSION}" \
+         " --build-arg RUBY_VERSION=#{ruby_version}"    \
+         " --build-arg GEM_NAME=#{GEM_NAME}"            \
+         " --build-arg GEM_VERSION=#{GEM_VERSION}"      \
          " -t appmap:#{GEM_VERSION} -f Dockerfile.appmap ."
 end
   
