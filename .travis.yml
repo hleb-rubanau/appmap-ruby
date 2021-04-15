@@ -36,6 +36,6 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: semantic-release
+    script: rake release
     on:
       branch: master
