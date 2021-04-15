@@ -20,4 +20,20 @@ jobs:
     script:
     - mkdir tmp
     - bundle exec rake test
+
     
+before_deploy:
+  - |
+    nvm install --lts \
+      && nvm use --lts \
+      && npm i -g \
+        semantic-release \
+        @semantic-release/git \
+        @semantic-release/changelog \
+        semantic-release-rubygem
+
+deploy:
+  - provider: script
+    script: semantic-release
+    on:
+      branch: master

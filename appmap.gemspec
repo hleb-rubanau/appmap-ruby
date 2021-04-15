@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'appmap/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'appmap'
+  spec.name          = ENV['CI_GEM_NAME'] or 'appmap'
   spec.version       = AppMap::VERSION
   spec.authors       = ['Kevin Gilpin']
   spec.email         = ['kgilpin@gmail.com']
