@@ -1,3 +1,21 @@
+# [0.44.0](https://github.com/hleb-rubanau/appmap-ruby/compare/v0.43.0...v0.44.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* **build:** carefully parameterize gem name ([075c96e](https://github.com/hleb-rubanau/appmap-ruby/commit/075c96ec0fa1a6170a87f27dcde0918c9e925a69))
+* **build:** fix syntax error ([116b074](https://github.com/hleb-rubanau/appmap-ruby/commit/116b074ed80f00d274e3d0ce9bfea2ca362c0635))
+* **build:** only parameterize gem name on publication step ([c17a3ef](https://github.com/hleb-rubanau/appmap-ruby/commit/c17a3ef06d8e59011ef6f46b472ed032b2237ad8))
+* **build:** parameterize GEM_NAME in another space ([18facee](https://github.com/hleb-rubanau/appmap-ruby/commit/18facee599dbd0670813e4914373f740d6be35ca))
+* **build:** run release via shell wrapper, avoid using Rake (it is an overkill) ([cc4a73e](https://github.com/hleb-rubanau/appmap-ruby/commit/cc4a73e24b74aa2d6362c83401983c2dd1609922))
+* **build:** stupidiest typo ([5806526](https://github.com/hleb-rubanau/appmap-ruby/commit/58065262754e4cbf616230ed849bf2b4d0e02e33))
+* **build:** use parameterizable appmap ([3499f66](https://github.com/hleb-rubanau/appmap-ruby/commit/3499f660b4c41d96c329d59de44ae9dcf4ce6387))
+
+
+### Features
+
+* **build:** add semantic-release with automatic publication to rubygems ([6ba56f2](https://github.com/hleb-rubanau/appmap-ruby/commit/6ba56f23205e7ff499a51ef38d3948f0776d20a0))
+
 # v0.43.0
 
 * Record `name` and `class` of each entry in Hash-like parameters, messages, and return values.
