@@ -1,3 +1,11 @@
+## [0.44.2](https://github.com/hleb-rubanau/appmap-ruby/compare/v0.44.1...v0.44.2) (2021-04-16)
+
+
+### Bug Fixes
+
+* **build:** fix evaluation of parameterized name ([16062db](https://github.com/hleb-rubanau/appmap-ruby/commit/16062db4ee9e832405590f24425d84e13205683f))
+* **build:** try softer resetting of GEM_ALTERNATIVE_NAME in test to avoid hiding it from deploy stage ([ab779ba](https://github.com/hleb-rubanau/appmap-ruby/commit/ab779ba732af7215cb26f874beec13af19da9507))
+
 ## [0.44.1](https://github.com/hleb-rubanau/appmap-ruby/compare/v0.44.0...v0.44.1) (2021-04-16)
 
 
