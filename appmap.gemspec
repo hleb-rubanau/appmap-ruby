@@ -4,8 +4,10 @@ lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'appmap/version'
 
+
+
 Gem::Specification.new do |spec|
-  spec.name          = (ENV['GEM_ALTERNATIVE_NAME'] or 'appmap')
+  spec.name          = (ENV['GEM_ALTERNATIVE_NAME'].to_s.empty? ? 'appmap' : ENV["GEM_ALTERNATIVE_NAME"] )
   spec.version       = AppMap::VERSION
   spec.authors       = ['Kevin Gilpin']
   spec.email         = ['kgilpin@gmail.com']
