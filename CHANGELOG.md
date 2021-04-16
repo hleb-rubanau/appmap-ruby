@@ -1,3 +1,10 @@
+## [0.44.1](https://github.com/hleb-rubanau/appmap-ruby/compare/v0.44.0...v0.44.1) (2021-04-16)
+
+
+### Bug Fixes
+
+* **build:** debug release script, ensure GEM_ALTERNATIVE_NAME is set ([e95c0e1](https://github.com/hleb-rubanau/appmap-ruby/commit/e95c0e11c3a8c923c1b80a54db931f6908a5c4d5))
+
 # [0.44.0](https://github.com/hleb-rubanau/appmap-ruby/compare/v0.43.0...v0.44.0) (2021-04-16)
 
 
