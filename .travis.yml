@@ -20,8 +20,7 @@ jobs:
   - stage: test
     script:
     - mkdir tmp
-    - unset GEM_ALTERNATIVE_NAME
-    - bundle exec rake test
+    - GEM_ALTERNATIVE_NAME='' bundle exec rake test
 
     
 before_deploy:
