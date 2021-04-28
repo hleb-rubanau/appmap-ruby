@@ -1,3 +1,19 @@
+# [0.44.0](https://github.com/hleb-rubanau/appmap-ruby/compare/v0.43.0...v0.44.0) (2021-04-28)
+
+
+### Features
+
+* **build:** add deployment via `semantic-release` with automatic publication to rubygems ([9f183de](https://github.com/hleb-rubanau/appmap-ruby/commit/9f183de13f405900000c3da979c3a8a5b6e34a24))
+* Atomically write AppMap file ([e7381b9](https://github.com/hleb-rubanau/appmap-ruby/commit/e7381b9f104b379455f09d10b6e31030ec484b38))
+* Hook before_action and after_action from active support ([42b87dc](https://github.com/hleb-rubanau/appmap-ruby/commit/42b87dc201f24c7726910fe9d01c2f4a6717a040))
+* Raise error when appmap.yml doesn't exist ([f564371](https://github.com/hleb-rubanau/appmap-ruby/commit/f564371ee195823f1281213f95572015332205ab))
+* Record test_status and exception in the AppMap file ([b6091b8](https://github.com/hleb-rubanau/appmap-ruby/commit/b6091b80435a3ac5c4a30b7a1f8c1f390591704e))
+* Refine builtin hooks and add class hooks ([7898336](https://github.com/hleb-rubanau/appmap-ruby/commit/7898336004ca42b5d49ef2d15b4a995d1994fa81))
+* Remove outdated exe/appmap ([362b83d](https://github.com/hleb-rubanau/appmap-ruby/commit/362b83dcbffc631a02f7ecf7d76a59c6f7d3b38f))
+* Remove source code from appmap ([cc95b5c](https://github.com/hleb-rubanau/appmap-ruby/commit/cc95b5c362e559d8f50fc805e0d30064ad07ba7c))
+* Support hooking a specific function, with labels ([9a7fe5a](https://github.com/hleb-rubanau/appmap-ruby/commit/9a7fe5a62353102efb3b54032e3b9c8241da4cc7))
+* Support recording and labeling of individual functions ([763af9c](https://github.com/hleb-rubanau/appmap-ruby/commit/763af9cef8431d736b183a1ba13dd2f7f16f5ac9))
+
 # v0.44.0
 
 * Support recording and labeling of indivudal functions via `functions:` section in *appmap.yml*.
