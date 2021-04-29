@@ -18,6 +18,8 @@ cache:
   bundler: true
   directories:
     - $HOME/.docker
+    - $HOME/docker
+    - /var/lib/docker
 
 before_install:
 
