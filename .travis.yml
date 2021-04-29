@@ -17,7 +17,7 @@ before_script:
 cache:
   bundler: true
   directories:
-    - $HOME/docker
+    - $HOME/.docker
 
 before_install:
 
