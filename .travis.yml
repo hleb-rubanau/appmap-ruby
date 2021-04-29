@@ -18,8 +18,7 @@ cache:
   bundler: true
   directories:
     - $HOME/.docker
-    - $HOME/docker
-    - /var/lib/docker
+    #- $HOME/docker
 
 ## https://stackoverflow.com/a/41975912
 #before_cache:
